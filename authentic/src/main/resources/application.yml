@@ -1,0 +1,21 @@
+server:
+  port: 9000
+  servlet:
+    session:
+      cookie:
+        name: OAUTHSESSION
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/springcloud?serverTimezone=UTC&useUnicode=true&characterEncoding=UTF-8
+    username: root
+    password: admin
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  sleuth:
+    sampler:
+      probability: 1
+  zipkin:
+    sender:
+      type: web

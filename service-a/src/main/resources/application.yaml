@@ -1,0 +1,21 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: service-a
+  sleuth:
+    sampler:
+      probability: 1
+  zipkin:
+    sender:
+      type: web
+security:
+  oauth2:
+    client:
+      accessTokenUri: http://localhost:8000/authentic/oauth/token
+      userAuthorizationUri: http://localhost:8000/authentic/oauth/authorize
+      clientId: client
+      client-secret: test
+      scope: server
+    resource:
+      token-info-uri: http://localhost:8000/authentic/oauth/check_token

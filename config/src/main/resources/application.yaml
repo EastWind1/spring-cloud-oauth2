@@ -1,0 +1,22 @@
+spring:
+  profiles:
+    active: native
+  application:
+    name: config
+  cloud:
+    config:
+      server:
+#        git:
+#          uri: https://git.iec.io/lifeiyue/cloud-config.git
+        native:
+          search-locations: file:E:\\springcloud\\cloud-config
+    bus:
+      trace:
+        enabled: true
+server:
+  port: 8888
+management:
+  endpoints:
+    web:
+      exposure:
+        include: bus-refresh

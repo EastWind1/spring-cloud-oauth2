@@ -1,0 +1,46 @@
+GET http://localhost:9000/user
+
+###
+
+PUT http://localhost:8500/agent/service/deregister/
+
+###
+
+PUT http://localhost:8500/agent/service/deregister/service-b
+
+###
+
+PUT http://localhost:8500/agent/service/deregister/service-b
+
+###
+
+GET http://localhost:8081/config
+
+<> 2019-10-08T040316.200.txt
+
+###
+
+GET http://localhost:8081/config
+
+<> 2019-10-08T030913.200.txt
+
+###
+
+GET http://localhost:8081/config
+
+<> 2019-10-08T110058.200.txt
+
+###
+
+GET http://localhost:8082/error
+
+<> 2019-10-08T110011.500.json
+
+###
+
+GET http://localhost:8082/error
+
+<> 2019-10-08T105945.500.json
+
+###
+

@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: service-c
+  cloud:
+    config:
+      name: ${spring.application.name}
+      profile: test
+      label: master

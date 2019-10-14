@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: authentic
+  cloud:
+    config:
+      name: ${spring.application.name}
+      profile: test
+      label: master

@@ -1,0 +1,6 @@
+spring:
+  cloud:
+    config:
+      name: service-b
+      profile: test
+      label: master

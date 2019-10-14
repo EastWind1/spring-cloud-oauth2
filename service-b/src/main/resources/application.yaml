@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: service-b
+  sleuth:
+    sampler:
+      probability: 1
+  zipkin:
+    sender:
+      type: web
+server:
+  port: 8082
+feign:
+  hystrix:
+    enabled: true
+security:
+  oauth2:
+    client:
+      accessTokenUri: http://localhost:8000/authentic/oauth/token
+      userAuthorizationUri: http://localhost:8000/authentic/oauth/authorize
+      clientId: client
+      client-secret: test
+      scope: server
+    resource:
+      user-info-uri: http://localhost:8000/authentic/user
+    authorization:
+      check-token-access: http://localhost:8000/authentic/oauth/check_token
