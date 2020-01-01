@@ -27,6 +27,7 @@
       <module name="service-a" options="-parameters" />
       <module name="service-b" options="-parameters" />
       <module name="service-c" options="-parameters" />
+      <module name="spring-cloud-oauth2" options="" />
     </option>
   </component>
 </project>
